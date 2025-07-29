@@ -68,9 +68,6 @@
 .border1:hover {
   border: 3px solid orange;
 }
-.search-icon:hover {
-  background-color: #e3d27f;
-}
 .search-input {
   width: 100%;
   font-size: 1rem;
@@ -151,7 +148,7 @@
   height: 34px;
   width: 350px;
   border-radius: 6px;
-  background-color: rgb(228, 209, 30);
+  background-color: #ffd814;
   color: black;
   border-radius: 5.6px;
   padding: 2px;
@@ -246,8 +243,9 @@
 .sign-a:hover {
   color: rgb(222, 86, 18);
 }
-
-/* hello*/
+.search-icon:hover {
+  background: #f9af4f;
+}
 
 .navreturn {
   height: 50px;
