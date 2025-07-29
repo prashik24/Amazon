@@ -1,76 +1,98 @@
-const slides = document.querySelector(".s2");
-const slider = document.querySelector(".s1");
-const slideWidth = slides.children[0].offsetWidth;
+document.querySelectorAll('.A1').forEach(a1Section => {
+  // Adjust selectors relative to this .A1 block
+  const sliderFrame = a1Section.querySelector('.s1');
+  const slidesTrack = a1Section.querySelector('.s2');
+  const progressTrack = a1Section.querySelector('.button-new');
+  const progressFill = a1Section.querySelector('.inside-button');
+  if (!sliderFrame || !slidesTrack || !progressTrack || !progressFill) return;
+  const singleSlideWidth = slidesTrack.children[0].offsetWidth;
 
-const leftArrow = document.createElement("button");
-const rightArrow = document.createElement("button");
+  const arrowLeft = document.createElement('button');
+  const arrowRight = document.createElement('button');
+  arrowLeft.innerHTML = '&#10094;';
+  arrowRight.innerHTML = '&#10095;';
 
-leftArrow.innerHTML = "&#10094;";
-rightArrow.innerHTML = "&#10095;";
+  const baseArrowStyle = {
+    position: 'absolute',
+    top: '40%',
+    transform: 'translateY(-50%)',
+    backgroundColor: '#fff',
+    color: '#000',
+    border: 'none',
+    borderRadius: '3px',
+    width: '50px',
+    height: '100px',
+    fontSize: '32px',
+    cursor: 'pointer',
+    zIndex: '10',
+    boxShadow: '0 2px 6px rgba(0, 0, 0, 0.5)',
+    transition: 'opacity 0.3s ease'
+  };
+  Object.assign(arrowLeft.style, baseArrowStyle, { left: '15px' });
+  Object.assign(arrowRight.style, baseArrowStyle, { right: '15px' });
 
-const baseArrowStyle = {
-  position: "absolute",
-  top: "40%",
-  transform: "translateY(-50%)",
-  backgroundColor: "#fff",
-  color: "#000",
-  border: "none",
-  borderRadius: "2px",
-  width: "50px",
-  height: "100px",
-  fontSize: "32px",
-  cursor: "pointer",
-  zIndex: "10",
-  boxShadow: "0 2px 6px rgba(130, 126, 126, 0.3)",
-  transition: "opacity 0.3s ease",
-  
-};
+  sliderFrame.appendChild(arrowLeft);
+  sliderFrame.appendChild(arrowRight);
 
-Object.assign(leftArrow.style, baseArrowStyle, { left: "15px" });
-Object.assign(rightArrow.style, baseArrowStyle, { right: "15px" });
+  let currentIndex = 0;
+  const totalSlides = slidesTrack.children.length;
 
-slider.appendChild(leftArrow);
-slider.appendChild(rightArrow);
-
-let currentIndex = 0;
-const totalSlides = slides.children.length;
-
-function updateArrowVisibility() {
-  if (currentIndex === 0) {
-    leftArrow.style.opacity = "0";
-    leftArrow.style.pointerEvents = "none";
-    rightArrow.style.opacity = "1";
-    rightArrow.style.pointerEvents = "auto";
-  } else if (currentIndex === totalSlides - 1) {
-    leftArrow.style.opacity = "1";
-    leftArrow.style.pointerEvents = "auto";
-    rightArrow.style.opacity = "0";
-    rightArrow.style.pointerEvents = "none";
-  } else {
-    leftArrow.style.opacity = "1";
-    rightArrow.style.opacity = "1";
-    leftArrow.style.pointerEvents = "auto";
-    rightArrow.style.pointerEvents = "auto";
+  function updateArrowVisibility() {
+    arrowLeft.style.opacity = (currentIndex === 0) ? '0.2' : '1';
+    arrowRight.style.opacity = (currentIndex === totalSlides - 1) ? '0.2' : '1';
   }
-}
 
-function slideNext() {
-  if (currentIndex >= totalSlides - 1) return;
-  currentIndex++;
-  slides.style.transition = "transform 0.5s ease";
-  slides.style.transform = `translateX(-${slideWidth * currentIndex}px)`;
+  function updateProgressBar() {
+    const trackWidth = progressTrack.offsetWidth;
+    const fillWidth = progressFill.offsetWidth;
+    const maxLeft = trackWidth - fillWidth;
+    let leftPx = 0;
+    if (totalSlides > 1) {
+      leftPx = (maxLeft) * (currentIndex / (totalSlides - 1));
+    }
+    progressFill.style.left = leftPx + "px";
+  }
+
+  function slideNext() {
+    if (currentIndex >= totalSlides - 1) return;
+    currentIndex++;
+    slidesTrack.style.transition = 'transform 0.5s ease';
+    slidesTrack.style.transform = `translateX(-${singleSlideWidth * currentIndex}px)`;
+    updateArrowVisibility();
+    updateProgressBar();
+  }
+  function slidePrev() {
+    if (currentIndex <= 0) return;
+    currentIndex--;
+    slidesTrack.style.transition = 'transform 0.5s ease';
+    slidesTrack.style.transform = `translateX(-${singleSlideWidth * currentIndex}px)`;
+    updateArrowVisibility();
+    updateProgressBar();
+  }
+
+  // Show/hide arrows and progress bar on mouse events
+  function showControls() {
+    arrowLeft.style.display = 'block';
+    arrowRight.style.display = 'block';
+    progressFill.style.display = 'block';
+  }
+  function hideControls() {
+    arrowLeft.style.display = 'none';
+    arrowRight.style.display = 'none';
+    progressFill.style.display = 'none';
+  }
+
+  sliderFrame.addEventListener('mouseenter', showControls);
+  sliderFrame.addEventListener('mouseleave', hideControls);
+
+  arrowRight.addEventListener('click', slideNext);
+  arrowLeft.addEventListener('click', slidePrev);
+
+  arrowLeft.style.display = 'none';
+  arrowRight.style.display = 'none';
+  progressFill.style.display = 'none';
+
   updateArrowVisibility();
-}
-
-function slidePrev() {
-  if (currentIndex <= 0) return;
-  currentIndex--;
-  slides.style.transition = "transform 0.5s ease";
-  slides.style.transform = `translateX(-${slideWidth * currentIndex}px)`;
-  updateArrowVisibility();
-}
-
-rightArrow.addEventListener("click", slideNext);
-leftArrow.addEventListener("click", slidePrev);
-
-updateArrowVisibility();
+  setTimeout(updateProgressBar, 80);
+  window.addEventListener('resize', updateProgressBar);
+});
