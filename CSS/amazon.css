@@ -18,15 +18,16 @@
 .logo {
   background-image: url("../image/Amazon.jpg");
   background-size: cover;
-  height: 50px;
+  height: 45px;
   width: 110;
 }
 .border {
-  border: 2px solid transparent;
+  border: 1.4px solid transparent;
 }
 .border:hover {
-  border: 2px solid white;
+  border: 1.4px solid white;
 }
+
 .address {
   width: 110px;
   height: 50px;
