@@ -43,6 +43,8 @@
             background-repeat: no-repeat;
             background-size: contain;
             align-items: center;
+            margin-top: -20px;
+            margin-bottom: -8px;
         
             
         }
