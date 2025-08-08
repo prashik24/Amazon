@@ -22,7 +22,18 @@
     margin-right: 5px;
     margin-bottom: 7px;
 }
-
+.form-containers {
+  display: none;
+  position: absolute;
+  top: 60px;
+  left: 72%; 
+  transform: translateX(-50%); 
+  color: #0f1111;
+  border: 1px solid #cdee6a;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.4);
+  z-index: 1000; 
+}
 
 form-containers{                
     position: absolute;
@@ -40,9 +51,7 @@ form-containers{
     border-right: 9px solid transparent;
     border-bottom: 9px solid #ffffff;
     filter: drop-shadow(0 1px 1px rgba(0,0,0,.15));
-   
 }
-
 
 #lang-main1{
     height: 370px;
@@ -83,10 +92,10 @@ form-containers{
 margin-left: 24px;
 margin-right: px;
 border: 0.2px solid  rgb(174, 179, 179);;
-height: 0px; /* Adjust the height as needed */
+height: 0px; 
 transform: rotate(0deg);
 width: 180px;
-filter: blur(0); /* Adjust the blur intensity */
+filter: blur(0);
 visibility:0%;
 
 } 
