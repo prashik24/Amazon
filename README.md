@@ -20,6 +20,9 @@ This project is ideal for **beginners in web development** who want to sharpen t
 
   * Amazon-like header with **logo, search bar, and navigation links**
   * Responsive design that works on desktop and mobile
+ 
+    <img width="1897" height="117" alt="image" src="https://github.com/user-attachments/assets/94794ee8-98e2-415d-85ae-8db7a94c9b16" />
+
 
 * **Hero Section**
 
@@ -34,6 +37,9 @@ This project is ideal for **beginners in web development** who want to sharpen t
 
   * Links similar to Amazon’s footer
   * Contact info and policies
+ 
+    <img width="1890" height="855" alt="image" src="https://github.com/user-attachments/assets/c57f7233-6d4d-4468-8177-e4362cc5cb64" />
+
 
 * **Responsive Design**
 
