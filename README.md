@@ -41,12 +41,20 @@ This project is ideal for **beginners in web development** who want to sharpen t
 
      <img width="633" height="580" alt="image" src="https://github.com/user-attachments/assets/66d1aa45-4d5b-448e-8aa3-bb6b2dac6cbb" />
 
+     
 
 
     
-* **Hero Section**
+* **Slider Section Cart**
+   * The image are in moving slider card
 
-  * Promotional banner styled like Amazon’s homepage
+     <img width="1897" height="398" alt="image" src="https://github.com/user-attachments/assets/ad22f985-50aa-41e8-941e-8ddf0d1573b4" />
+     
+     <img width="1842" height="346" alt="image" src="https://github.com/user-attachments/assets/26e61b15-b8fd-4dcf-a530-d18b8e33a475" />
+
+     <img width="1839" height="351" alt="image" src="https://github.com/user-attachments/assets/bcb25609-a861-410d-874c-eb5d770dc97a" />
+
+
 
 * **Product Sections**
 
