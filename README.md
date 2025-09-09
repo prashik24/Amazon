@@ -33,6 +33,11 @@ This project is ideal for **beginners in web development** who want to sharpen t
 
 
 
+* **Sign-Up**
+  
+   * Sign-Up page for user to login in Website 
+
+    
 * **Hero Section**
 
   * Promotional banner styled like Amazon’s homepage
