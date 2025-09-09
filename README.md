@@ -23,6 +23,12 @@ This project is ideal for **beginners in web development** who want to sharpen t
  
     <img width="1897" height="117" alt="image" src="https://github.com/user-attachments/assets/94794ee8-98e2-415d-85ae-8db7a94c9b16" />
 
+* **Language Selector**
+   
+  * language selector is used to selected the language for Website page 
+    
+    <img width="1886" height="643" alt="image" src="https://github.com/user-attachments/assets/ebf7eb9e-2ae8-4cb3-a433-7bdae5460984" />
+
 
 * **Hero Section**
 
