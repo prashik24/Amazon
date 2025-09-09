@@ -47,12 +47,16 @@ This project is ideal for **beginners in web development** who want to sharpen t
     
 * **Slider Section Cart**
    * The image are in moving slider card
+   * On cover only arrow and moving bar appear
 
      <img width="1897" height="398" alt="image" src="https://github.com/user-attachments/assets/ad22f985-50aa-41e8-941e-8ddf0d1573b4" />
      
      <img width="1842" height="346" alt="image" src="https://github.com/user-attachments/assets/26e61b15-b8fd-4dcf-a530-d18b8e33a475" />
 
      <img width="1839" height="351" alt="image" src="https://github.com/user-attachments/assets/bcb25609-a861-410d-874c-eb5d770dc97a" />
+
+     <img width="1839" height="350" alt="image" src="https://github.com/user-attachments/assets/2040b7f1-f2db-4d47-92ea-037c44a4795b" />
+
 
 
 
