@@ -65,6 +65,12 @@ This project is ideal for **beginners in web development** who want to sharpen t
   * Multiple categories displaying **product cards**
   * Product images, price, and descriptions
 
+     <img width="1897" height="901" alt="image" src="https://github.com/user-attachments/assets/f7ea63c2-fdde-4d53-91f7-a51c056a3a3a" />
+
+     <img width="1895" height="590" alt="image" src="https://github.com/user-attachments/assets/a9deaa17-4cff-4968-b100-406e0a94efd7" />
+
+
+
 * **Footer Section**
 
   * Links similar to Amazon’s footer
