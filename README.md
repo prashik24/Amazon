@@ -41,7 +41,13 @@ This project is ideal for **beginners in web development** who want to sharpen t
 
      <img width="633" height="580" alt="image" src="https://github.com/user-attachments/assets/66d1aa45-4d5b-448e-8aa3-bb6b2dac6cbb" />
 
+
+ * **Login Page**
+  
+   * Login page for user to login in Website
      
+    
+    
 
 
     
@@ -82,6 +88,8 @@ This project is ideal for **beginners in web development** who want to sharpen t
 * **Responsive Design**
 
   * Optimized for desktop, tablet, and mobile views
+
+ 
 
 ---
 
