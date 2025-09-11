@@ -48,7 +48,10 @@ This project is ideal for **beginners in web development** who want to sharpen t
   
      <img width="1907" height="900" alt="image" src="https://github.com/user-attachments/assets/18acd4de-5756-4c00-b0bc-05a8f0098e98" />
 
-     
+  * **Product Sections**
+
+    <img width="1883" height="560" alt="image" src="https://github.com/user-attachments/assets/3777badf-3f96-40b9-8620-f68fe1e41e14" />
+
     
     
 
@@ -157,18 +160,6 @@ https://<your-username>.github.io/<repository-name>/
 
 For this project:
 👉 [https://prashik24.github.io/Amazon/](https://prashik24.github.io/Amazon/)
-
----
-
-## 📸 Screenshots
-
-### Homepage
-
-(Add a screenshot here of the homepage)
-
-### Product Section
-
-(Add a screenshot here of product cards)
 
 ---
 
