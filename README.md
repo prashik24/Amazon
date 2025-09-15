@@ -69,6 +69,9 @@ This project is ideal for **beginners in web development** who want to sharpen t
 
      <img width="1839" height="350" alt="image" src="https://github.com/user-attachments/assets/2040b7f1-f2db-4d47-92ea-037c44a4795b" />
 
+     ![Uploading image.png…]()
+
+
 
 
 
